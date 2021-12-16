@@ -13,7 +13,15 @@ const getFilmes = async () => {
             "beforeend",
             `
                 <tr>
-                
+                    <th>${filme.id}</th>
+                    <td>${filme.img}</td>
+                    <td>${filme.nome}</td>
+                    <td>${filme.genero}</td>
+                    <td>${filme.nota}</td>
+                    <td>
+                        <button class="" onclick="editaFilme(${filme.id})"></button>
+                        <button class="" onclick="deletaFilme(${filme.id})></button>
+                    </td>
                 </tr>
         
             
@@ -21,3 +29,6 @@ const getFilmes = async () => {
         );
     });
 };
+
+getFilmes();
+
