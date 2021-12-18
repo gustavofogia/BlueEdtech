@@ -9,7 +9,7 @@ const getFilme = (req, res) => {
 const getFilmesById = (req, res) => {
     const id = req.params.id;
     const filme = filmeService.getFilmesbyIdService(id);
-    res.send(vaga)
+    res.send(filme)
 }
 
 const postFilme = (req, res) => {

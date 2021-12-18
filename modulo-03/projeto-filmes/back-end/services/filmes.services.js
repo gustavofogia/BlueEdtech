@@ -27,7 +27,7 @@ const getFilmesService = () => {
 }
 
 const getFilmesbyIdService = (idParam) => {
-    return filmeflix.find((filme) => vaga.id == idParam)
+    return filmeflix.find((filme) => filme.id == idParam)
 }
 
 //cadastra um novo filme (objeto) na lista filmeflix
