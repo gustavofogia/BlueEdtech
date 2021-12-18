@@ -1,8 +1,8 @@
 
-const filmeService = require('../services/filmes.services');
+const filmesService = require('../services/filmes.services');
 
-const getFilme = (req, res) => {
-    const filmes = filmeService.getFilmesService();
+const getFilmes = (req, res) => {
+    const filmes = filmesService.getFilmesService();
     res.send(filmes);
 }
 
@@ -49,7 +49,7 @@ const deleteFilme = (req, res) => {
 }
 
 module.exports = {
-    getFilme,
+    getFilmes,
     getFilmesById,
     postFilme,
     putFilme,
